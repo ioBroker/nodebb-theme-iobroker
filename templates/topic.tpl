@@ -19,30 +19,6 @@
 				</span>
 			</h1>
 
-			<div class="topic-info clearfix">
-				<div class="category-item inline-block">
-					{{{ if category.icon }}}
-					<div role="presentation" class="icon pull-left" style="{{{ if category.bgColor }}}background-color: {category.bgColor};{{{end}}}; {{{ if category.color}}}color: {category.color};{{{end}}}">
-						<i class="fa fa-fw {category.icon}"></i>
-					</div>
-					{{{ end }}}
-					<a href="{config.relative_path}/category/{category.slug}">{category.name}</a>
-
-				</div>
-
-				<div class="tags tag-list inline-block hidden-xs">
-					<!-- IMPORT partials/topic/tags.tpl -->
-				</div>
-				<div class="inline-block hidden-xs">
-					<!-- IMPORT partials/topic/stats.tpl -->
-				</div>
-				{{{ if !feeds:disableRSS }}}
-				{{{ if rssFeedUrl }}}<a class="hidden-xs" target="_blank" href="{rssFeedUrl}"><i class="fa fa-rss-square"></i></a>{{{ end }}}
-				{{{ end }}}
-				<!-- IMPORT partials/topic/browsing-users.tpl -->
-
-				<!-- IMPORT partials/post_bar.tpl -->
-			</div>
 		</div>
 		<!-- IF merger -->
 		<div component="topic/merged/message" class="alert alert-warning clearfix">
@@ -92,6 +68,22 @@
 	{{{each widgets.footer}}}
 	{{widgets.footer.html}}
 	{{{end}}}
+</div>
+
+<div class="topic topic-info clearfix">
+
+	<div class="tags tag-list inline-block hidden-xs">
+		<!-- IMPORT partials/topic/tags.tpl -->
+	</div>
+	<div class="inline-block hidden-xs">
+		<!-- IMPORT partials/topic/stats.tpl -->
+	</div>
+	{{{ if !feeds:disableRSS }}}
+	{{{ if rssFeedUrl }}}<a class="hidden-xs" target="_blank" href="{rssFeedUrl}"><i class="fa fa-rss-square"></i></a>{{{ end }}}
+	{{{ end }}}
+		<!-- IMPORT partials/topic/browsing-users.tpl -->
+
+		<!-- IMPORT partials/post_bar.tpl -->
 </div>
 
 <!-- IF !config.usePagination -->

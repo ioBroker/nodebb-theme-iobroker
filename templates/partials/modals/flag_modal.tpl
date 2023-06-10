@@ -23,11 +23,12 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<textarea class="form-control" id="flag-reason-custom" placeholder="[[flags:modal-reason-custom]]" disabled="disabled"></textarea>
+					<textarea class="form-control hide" id="flag-reason-custom" placeholder="[[flags:modal-reason-custom]]"></textarea>
 				</div>
-
-				<button type="button" class="btn btn-primary pull-right" id="flag-post-commit" disabled>[[flags:modal-submit]]</button>
-				<div class="clear"></div>
+				<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">[[modules:bootbox.cancel]]</button>
+				    <button type="button" class="btn btn-primary" id="flag-post-commit" disabled>[[flags:modal-submit]]</button>
+				</div>
 			</div>
 		</div>
 	</div>

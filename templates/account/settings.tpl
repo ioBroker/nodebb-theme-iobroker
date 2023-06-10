@@ -1,3 +1,4 @@
+<!-- IMPORT partials/breadcrumbs.tpl -->
 <div class="account">
 	<!-- IMPORT partials/account/header.tpl -->
 
@@ -210,8 +211,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="form-actions">
-		<a id="submitBtn" href="#" class="btn btn-primary">[[global:save_changes]]</a>
-	</div>
+	<div class="row">
+	    <div class="col-xs-12 col-md-12">
+    	    <div class="form-actions">
+    		    <a id="submitBtn" href="#" class="btn btn-primary">[[global:save_changes]]</a>
+    	    </div>
+    	</div>
+    </div>
 </div>
 

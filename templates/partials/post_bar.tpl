@@ -18,4 +18,4 @@
 	</div>
 	<!-- IMPORT partials/topic/reply-button.tpl -->
 </div>
-<hr/>
+

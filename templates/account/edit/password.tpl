@@ -1,3 +1,4 @@
+<!-- IMPORT partials/breadcrumbs.tpl -->
 <div class="account">
 	<!-- IMPORT partials/account/header.tpl -->
 
@@ -24,7 +25,7 @@
 			<input class="form-control" type="password" id="inputNewPasswordAgain" placeholder="[[user:confirm_password]]" value="">
 			<span class="form-feedback" id="password-confirm-notify"></span>
 		</div>
-		
+
 		<div class="form-actions">
 			<button id="changePasswordBtn" class="btn btn-primary btn-block"><i class="hide fa fa-spinner fa-spin"></i> [[user:change_password]]</button>
 		</div>

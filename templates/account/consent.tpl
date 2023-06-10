@@ -1,3 +1,4 @@
+<!-- IMPORT partials/breadcrumbs.tpl -->
 <div class="account">
 	<!-- IMPORT partials/account/header.tpl -->
 	<h2>[[user:consent.title]]</h2>

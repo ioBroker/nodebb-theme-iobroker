@@ -208,13 +208,6 @@
 			<!-- IMPORT partials/tags_list.tpl -->
 			<!-- ENDIF tags.length -->
 
-			{{{ if categories.length }}}
-			<ul class="categories">
-				{{{each categories}}}
-				<!-- IMPORT partials/categories/item.tpl -->
-				{{{end}}}
-			</ul>
-			{{{ end }}}
 
 			<!-- IMPORT partials/paginator.tpl -->
 		</div>

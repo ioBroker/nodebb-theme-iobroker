@@ -5,7 +5,7 @@
 
 	h1 {
 		line-height: 40px;
-		margin-bottom: 0px;
+		margin-bottom: 10px;
 
 		.topic-title {
 			word-wrap: break-word;
@@ -39,7 +39,7 @@
 	[component="topic/browsing-users"] {
 		margin-bottom: -5px;
 	}
-	.topic-header {
+	/*.topic-header {
 		position: sticky;
 		top: @navbar-height;
 		background-color: @body-bg;
@@ -48,16 +48,8 @@
 		margin-right: -15px;
 		padding-left: 15px;
 		padding-right: 15px;
-	}
+	}*/
 
-	.topic-info {
-		border-bottom: 1px solid @post-border-color;
-		margin-bottom: 10px;
-		padding-bottom: 10px;
-		> * {
-			padding-top: 10px;
-		}
-	}
 	.category-item {
 		.icon {
 			min-width: 23px;
@@ -246,7 +238,7 @@
 	}
 
 	.stats {
-		font-size: 12px;
+		font-size: 16px;
 		margin: 0px 2px 0px 2px;
 		display: inline-block;
 	}
@@ -510,8 +502,9 @@
 	.pagination-block {
 		position: fixed;
 		background-color: @gray-lighter;
-		bottom: 0px;
-		right: 0px;
+		bottom: 3px;
+		right: 3px;
+		height: 44px;
 		z-index: 100;
 		transition: opacity 250ms ease-in;
 		opacity: 0;
@@ -537,6 +530,7 @@
 			}
 			.dropdown-menu {
 				width: 475px;
+				bottom: 45px!important;
 
 				li {
 					padding: 15px;
@@ -593,6 +587,8 @@
 	@media (max-width: @screen-sm-min) {
 		.pagination-block {
 			width: 100%;
+			right: 0px;
+			bottom: 0px;
 		}
 	}
 }
@@ -688,6 +684,22 @@
 	}
 }
 
+.topic-info {
+	position: fixed;
+	z-index: 9;
+	width: 100vw;
+	left: 0px;
+	padding-left: 8vw;
+	padding-right: 27vw;
+	bottom: 0px;
+	box-shadow: -15px 15px 35px 5px #000;
+	background-color: white;
+	padding-bottom: 10px;
+	> * {
+		padding-top: 10px;
+	}
+}
+
 .post-bar-fixed {
 	position: fixed;
 	bottom: 0;
@@ -695,4 +707,32 @@
 	right: 0;
 	background-color: white;
 	padding: 5px;
+}
+
+
+//
+// Skin correction
+// --------------------------------
+.skin-slate {
+	.topic-info{
+		background-image: linear-gradient(#484e55,#3a3f44 60%,#313539);
+		background-color: transparent;
+		color: white;
+		.tag-item{
+			color: white;
+			background-color: #272b30;
+		}
+	}
+
+	.pagination-block {
+		.pagination-text {
+			color: white;
+		}
+	}
+
+	.github-embed {
+		a {
+			color: white;
+		}
+	}
 }

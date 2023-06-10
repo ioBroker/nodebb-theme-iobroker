@@ -51,7 +51,7 @@
 .timeline {
 	.posts > [component="post"], .timeline-event {
 		position: relative;	// for absolutely positioned pseudo-element, below
-		border-left: 2px solid lighten(@brand-primary, 30%);
+		border-bottom: 1px solid @iobroker-blue;
 		margin-left: 2.5rem;
 
 		&:not(:last-child) {
@@ -110,15 +110,6 @@
 
 	.necro-post {
 		border-left-style: dashed;
-	}
-
-	.posts [component="post"]:last-child:after {
-		content: '';
-		width: 1rem;
-		position: absolute;
-		bottom: 0;
-		left: calc(-0.5rem - 1px);
-		border-bottom: 2px solid lighten(@brand-primary, 30%);
 	}
 
 	.posts .timeline-event {
