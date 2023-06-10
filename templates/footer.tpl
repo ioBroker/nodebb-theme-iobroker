@@ -59,7 +59,7 @@
         <a href="https://forum.iobroker.net/nutzungsbedingungen">    Nutzungsbedingungen</a>
       </div>
       <div class="row">
-        <div style="margin:16px">The ioBroker Community 2014-2021</div>
+        <div style="margin:16px">The ioBroker Community 2014-2023</div>
       </div>
 
       <div class="row">
