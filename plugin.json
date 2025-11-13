@@ -1,22 +1,21 @@
 {
 	"id": "nodebb-theme-iobroker",
 	"hooks": [
-		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
-		{ "hook": "filter:config.get", "method": "getThemeConfig" },
 		{ "hook": "static:app.load", "method": "init" },
 		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
-		{ "hook": "filter:topic.build", "method": "addUserToTopic" }
+		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
+		{ "hook": "filter:config.get", "method": "getThemeConfig" },
+		{ "hook": "filter:settings.get", "method": "getAdminSettings"},
+		{ "hook": "filter:user.saveSettings", "method": "saveUserSettings" },
+		{ "hook": "filter:user.profileMenu", "method": "addProfileItem" },
+		{ "hook": "filter:middleware.renderHeader", "method": "filterMiddlewareRenderHeader" }
 	],
 	"scripts": [
-		"public/persona.js",
-		"public/modules/autohidingnavbar.js",
-		"public/modules/quickreply.js"
+		"public/iobroker.js"
 	],
 	"modules": {
-		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
+		"../admin/plugins/iobroker.js": "public/admin.js",
+		"../client/account/theme.js": "public/settings.js"
 	},
-	"acpScripts": [
-		"public/admin.js"
-	],
 	"languages": "languages"
 }

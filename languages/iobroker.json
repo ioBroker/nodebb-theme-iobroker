@@ -1,0 +1,7 @@
+{
+    "theme-name": "ioBroker Theme",
+    "settings": {
+        "title": "Theme Settings",
+        "saved": "Settings saved successfully"
+    }
+}
