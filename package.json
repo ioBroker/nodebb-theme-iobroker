@@ -1,11 +1,11 @@
 {
   "name": "nodebb-theme-iobroker",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "nbbpm": {
-    "compatibility": "^1.16.2"
+    "compatibility": "^4.0.0"
   },
   "description": "ioBroker theme for NodeBB",
-  "main": "theme.less",
+  "main": "library.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/jey-cee/nodebb-theme-iobroker"
@@ -44,8 +44,12 @@
   "bugs": {
     "url": "https://github.com/jey-cee/nodebb-theme-iobroker/issues"
   },
-  "dependencies": {
-    "pulling": "^2.0.0",
-    "striptags": "^3.1.1"
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "9.39.1",
+    "eslint-config-nodebb": "^1.1.4"
   }
 }
